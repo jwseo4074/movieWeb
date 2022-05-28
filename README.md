@@ -1,1 +1,1 @@
-# make movieWebSite using React Js
+# Make movieWebSite using React Js
