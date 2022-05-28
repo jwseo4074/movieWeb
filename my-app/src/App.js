@@ -5,6 +5,8 @@ function App() {
   
   const [keyword, setKeyword] = useState('');
   const [counter, setCounter] = useState(0);
+  const [showing, setShowing] = useState(false);
+
   
   function btnClickFunc () {
     setCounter( (counter) => counter + 1 );
@@ -12,6 +14,21 @@ function App() {
 
   function inputChangeFunc (event) {
     setKeyword(event.target.value);
+  }
+
+  function checkShowingState (){
+    setShowing( (prev) => !prev )
+  }
+
+  function Hello () {
+    useEffect ( () => {
+      console.log("created component ")
+      return () => console.log("destroyed component")
+    }, []);
+    // 이건 웹이 처음 렌더링 될 때는 안나오겠지, 왜냐면? 처음 값 셋팅이 false 니까
+    // 토글이 되면서 다시 Hello가 불릴 때 마다 한번만 실행 되겠지
+    // 이게 바로 컴포넌트의 생성(create), 소멸(destroy)
+    return <h1> toggle On </h1>;
   }
 
   console.log("hello");
@@ -71,6 +88,25 @@ function App() {
         placeholder = "Here! "
       />
       </div>
+
+      <hr/>
+
+      {showing ? <Hello/> : "" }
+      <br/>
+      <button onClick = {checkShowingState} >  Toggle </button>
+      <br/>
+      <p>
+        useEffect ( () ={'>'} {'{'} <br/>
+        {'console.log'}("Helllo from useEffect !! ") <br/>
+        {'}'}, []); <br/>
+        이건 웹이 처음 렌더링 될 때는 안나오겠지, 왜냐면? 처음 값 셋팅이 false 니까 <br/>
+        토글이 되면서 다시 Hello가 불릴 때 마다 한번만 실행 되겠지 <br/>
+        이게 바로 컴포넌트의 생성(create), 소멸(destroy) <br/>
+        숨기는 게 아니라 아예 없애는거야 <br/>
+        <br/>
+        만약에 소멸(destroy) 될 때도 뭔가를 출력해주고 싶다!! 그럼 어떻게 해줘야 할까? <br/>
+        ={'>'} CleanUp Function 이라고 한다. useEffect 가 끝날 때 함수를 리턴해주기
+      </p>
     </div>
   );
 }
