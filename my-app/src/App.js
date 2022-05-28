@@ -1,23 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { useState, useEffect } from 'react';
 
 function App() {
+  
+  const [keyword, setKeyword] = useState('123');
+  const [counter, setCounter] = useState(0);
+  
+  function btnClickFunc () {
+    setCounter( (counter) => counter + 1 );
+  }
+
+  function inputChangeFunc (event) {
+    setKeyword(event.target.value);
+  }
+
+  console.log("hello");
+
+  useEffect( 
+    () => {
+      console.log("hello i am useEffect ")
+    } 
+    , []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div>
+        Counter : {counter}
+        <button onClick={btnClickFunc}>Click !! </button>
+      </div>
+
+      <hr></hr>
+
+      <div>
+        keyword : {keyword}
+      </div>
+      
+      <input
+        value = {keyword}
+        type = "text"
+        onChange={inputChangeFunc}
+        placeholder = "Here! "
+      />
     </div>
   );
 }
