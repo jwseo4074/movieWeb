@@ -14,6 +14,8 @@ function App() {
 		<div className="App">
 			<Router>
 				<Header />
+				<h1> This is website that useing React JS for study purposes </h1>
+				<h2> Choose one of the categories 🤓 </h2>
 				<Routes>
 					<Route path="/" element={<HomePage />} />
 					<Route path="/practicepage" element={<PracticePage />} />
