@@ -5,31 +5,31 @@ import { useParams } from 'react-router-dom';
 
 const Detail = () => {
 	const idOfUrl = useParams();
-	console.log('id = ', idOfUrl.id);
+	// console.log('id = ', idOfUrl.id);
 
 	const [detailInfo, setDetailInfo] = useState();
 
 	const getMovieDetail = async () => {
-		console.log(1);
+		// console.log(1);
 		try {
-			console.log(2);
+			// console.log(2);
 			const Response = await axios.get(
-				`https://www.omdbapi.com/?apikey=390bda69&i=tt2294629`
+				`https://www.omdbapi.com/?apikey=390bda69&i=${idOfUrl.id}`
 			);
-			console.log(3);
+			// console.log(3);
 			console.log('Response = ', Response);
 			setDetailInfo(Response);
-			console.log(5);
+			// console.log(5);
 		} catch (e) {
-			console.log(4);
-			console.log(e);
+			// console.log(4);
+			// console.log(e);
 		}
 	};
 
 	useEffect(() => {
-		console.log('!!!!');
+		// console.log('!!!!');
 		getMovieDetail();
-		console.log('~~~~');
+		// console.log('~~~~');
 	}, []);
 
 	return (
