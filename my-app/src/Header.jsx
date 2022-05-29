@@ -19,6 +19,10 @@ function Header() {
 			<Link to="/coinpage">
 				<button> Coin Page </button>
 			</Link>
+
+			<Link to="/moviepage">
+				<button> Movie Page </button>
+			</Link>
 			<br />
 			<br />
 			<hr />

@@ -1,0 +1,59 @@
+import React from 'react';
+import { useState } from 'react';
+// import { useEffect } from 'react';
+import axios from 'axios';
+
+const MoviePage = () => {
+	const [loading, setLoading] = useState(false);
+	const [movieData, setMovieData] = useState([]);
+	// 빈 배열로 해두지 않으면 undefined가 처음에 할당 되니까 개수를 세어줄 수가 없다 => 에러가 나옴
+
+	const getMovies = async () => {
+		try {
+			const Response = await axios.get('https://www.omdbapi.com/?apikey=390bda69&s=frozen');
+			console.log(Response.data.Search);
+			setMovieData(Response.data.Search);
+		} catch (e) {
+			console.log(e);
+		}
+		setLoading(false);
+	};
+
+	const roadMovieData = () => {
+		setLoading(true);
+		getMovies();
+	};
+
+	// useEffect(() => {}, [loading]);
+
+	if (loading) {
+		return <h1>loading ... </h1>;
+	}
+
+	return (
+		<div id="moviePageDiv">
+			<h1>The Movies ! </h1>
+
+			<hr />
+			{movieData.length >= 1 ? (
+				<div>
+					{movieData.map(movie => (
+						<div key={movie.imdbID}>
+							<div>
+								<h3>
+									{movie.Title}
+									<span>({movie.Year})</span>
+								</h3>
+							</div>
+							<img src={movie.Poster}></img>
+						</div>
+					))}
+				</div>
+			) : (
+				<button onClick={roadMovieData}> 영화 불러오기 ! </button>
+			)}
+		</div>
+	);
+};
+
+export default MoviePage;
