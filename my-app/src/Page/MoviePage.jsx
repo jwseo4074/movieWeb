@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 // import { useEffect } from 'react';
 import axios from 'axios';
+import Movie from '../Component/Movie';
 
 const MoviePage = () => {
 	const [loading, setLoading] = useState(false);
@@ -38,15 +39,14 @@ const MoviePage = () => {
 			{movieData.length >= 1 ? (
 				<div>
 					{movieData.map(movie => (
-						<div key={movie.imdbID}>
-							<div>
-								<h3>
-									{movie.Title}
-									<span>({movie.Year})</span>
-								</h3>
-							</div>
-							<img src={movie.Poster}></img>
-						</div>
+						<Movie
+							key={movie.imdbID}
+							movieID={movie.imdbID}
+							movieTitle={movie.Title}
+							movieYear={movie.Year}
+							moviePoster={movie.Poster}
+							movieType={movie.Type}
+						/>
 					))}
 				</div>
 			) : (
