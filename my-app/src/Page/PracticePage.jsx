@@ -52,7 +52,7 @@ const PracticePage = () => {
 	}, [counter, keyword]);
 
 	return (
-		<>
+		<div id="practicePageDiv">
 			<p>
 				* console.log("hello"); <br />= {'>'} counter 클릭해도 이거 나오고 keyword 바껴도
 				이거 나와 <br />= {'>'} 왜 ? state가 바뀌면서 이게 통째로 다시 렌더링 되거든 그걸
@@ -107,7 +107,7 @@ const PracticePage = () => {
 				만약에 소멸(destroy) 될 때도 뭔가를 출력해주고 싶다!! 그럼 어떻게 해줘야 할까?{' '}
 				<br />={'>'} CleanUp Function 이라고 한다. useEffect 가 끝날 때 함수를 리턴해주기
 			</p>
-		</>
+		</div>
 	);
 };
 
