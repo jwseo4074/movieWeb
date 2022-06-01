@@ -4,6 +4,8 @@ import { useState } from 'react';
 import axios from 'axios';
 import Movie from '../Component/Movie';
 
+import '../Style/PageStyle/MoviePage.css';
+
 const MoviePage = () => {
 	const [loading, setLoading] = useState(false);
 	const [movieData, setMovieData] = useState([]);
@@ -33,11 +35,8 @@ const MoviePage = () => {
 
 	return (
 		<div id="moviePageDiv">
-			<h1>The Movies ! </h1>
-
-			<hr />
 			{movieData.length >= 1 ? (
-				<div>
+				<div className="movies">
 					{movieData.map(movie => (
 						<Movie
 							key={movie.imdbID}
@@ -50,7 +49,13 @@ const MoviePage = () => {
 					))}
 				</div>
 			) : (
-				<button onClick={roadMovieData}> 영화 불러오기 ! </button>
+				<>
+					<h1>The Movies ! </h1>
+					<button id="loadMovieBtn" onClick={roadMovieData}>
+						{' '}
+						영화 불러오기 !{' '}
+					</button>
+				</>
 			)}
 		</div>
 	);

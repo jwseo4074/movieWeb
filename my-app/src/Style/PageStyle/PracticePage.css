@@ -1,0 +1,58 @@
+.practiceContentDiv {
+	width: 100%;
+	border-bottom: 3px solid black;
+}
+#TitleP {
+	margin-left: 30px;
+}
+.practiceContentDiv p {
+	margin-left: 30px;
+}
+
+#CounterBtnDiv {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+#CounterP {
+	font-weight: bolder;
+}
+#CounterBtn {
+	margin-left: 30px;
+	width: 80px;
+	height: 30px;
+	cursor: pointer;
+}
+
+#KeywordDiv {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+#KeywordP {
+	font-weight: bolder;
+}
+#KeywordInput {
+	margin-left: 30px;
+	width: 120px;
+	cursor: pointer;
+}
+#ToggleDiv {
+	display: flex;
+	flex-direction: row;
+}
+#ToggleP {
+	margin-left: 30px;
+}
+#ToggleBtn {
+	margin-left: 30px;
+	margin-bottom: 30px;
+	width: 80px;
+	height: 30px;
+	cursor: pointer;
+}
+#toggleonP {
+	margin-top: 5px;
+	padding: 0;
+	font-weight: bolder;
+}

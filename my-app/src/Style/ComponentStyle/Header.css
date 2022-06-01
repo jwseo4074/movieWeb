@@ -1,0 +1,20 @@
+#headerDiv {
+	display: flex;
+	border-bottom: 5px grid black;
+	width: 100%;
+	background-color: gray;
+	justify-content: center;
+}
+
+.headerDivBtn {
+	width: 150px;
+	height: 30px;
+	border-radius: 10px;
+	font-size: large;
+	margin: 15px;
+}
+.headerDivBtn:hover {
+	background-color: black;
+	cursor: pointer;
+	color: white;
+}

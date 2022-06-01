@@ -3,7 +3,7 @@ import React from 'react';
 import HomePage from './Page/HomePage';
 import PracticePage from './Page/PracticePage';
 import ToDosPage from './Page/ToDosPage';
-import Header from './Header';
+import Header from './Component/Header';
 import CoinPage from './Page/CoinPage';
 import MoviePage from './Page/MoviePage';
 import Detail from './Component/Detail';
@@ -14,8 +14,6 @@ function App() {
 		<div className="App">
 			<Router>
 				<Header />
-				<h1> This is website that useing React JS for study purposes </h1>
-				<h2> Choose one of the categories 🤓 </h2>
 				<Routes>
 					<Route path="/" element={<HomePage />} />
 					<Route path="/practicepage" element={<PracticePage />} />
