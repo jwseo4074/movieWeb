@@ -25,6 +25,10 @@ function Header() {
 			<Link to="/moviepage">
 				<button className="headerDivBtn"> Movie Page </button>
 			</Link>
+
+			<Link to="/usememopractice">
+				<button className="headerDivBtn"> useMemo </button>
+			</Link>
 		</div>
 	);
 }
