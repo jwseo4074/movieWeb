@@ -6,7 +6,7 @@ import '../Style/ComponentStyle/Header.css';
 function Header() {
 	return (
 		<div id="headerDiv">
-			<Link to="/">
+			<Link to="/webSite-React-JS/">
 				<button className="headerDivBtn"> Home </button>
 			</Link>
 
@@ -28,6 +28,10 @@ function Header() {
 
 			<Link to="/usememopractice">
 				<button className="headerDivBtn"> useMemo </button>
+			</Link>
+
+			<Link to="/reduxpracticepage">
+				<button className="headerDivBtn"> redux </button>
 			</Link>
 		</div>
 	);
