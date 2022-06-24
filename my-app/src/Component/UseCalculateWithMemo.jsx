@@ -8,7 +8,7 @@ const useCalculateWithMemo = props => {
 	return useMemo(() => {
 		console.log('useCalculateWithMemo Rerender !! ');
 		return sumVal;
-	}, [sumVal]);
+	}, [props.numA]);
 };
 
 export default useCalculateWithMemo;

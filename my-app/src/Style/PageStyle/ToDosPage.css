@@ -1,7 +1,7 @@
 #ToDosPageDiv div {
 	display: flex;
 	justify-content: center;
-	padding: 50px;
+	/* padding: 50px; */
 }
 #ToDosPageDiv form {
 	display: flex;
@@ -26,6 +26,12 @@
 	display: flex;
 	justify-content: center;
 	height: 40px;
+}
+#ToDosAtag2 {
+	display: flex;
+	justify-content: center;
+	/* height: 40px; */
+	margin-top: 100px;
 }
 #ToDosAtag a {
 	margin-left: 10px;

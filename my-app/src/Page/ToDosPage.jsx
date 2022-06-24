@@ -27,7 +27,10 @@ const ToDosPage = () => {
 			<h2 id="ToDosAtag">
 				{' '}
 				Vanila JS로 구현한 Todo List :{' '}
-				<a href="https://jwseo4074.github.io/todoList-Vanila-JS/"> zwon's Todo List</a>
+				<a href="https://jwseo4074.github.io/todoList-Vanila-JS/" target="_blank">
+					{' '}
+					zwon's Todo List
+				</a>
 			</h2>
 
 			<form onSubmit={onSubmitForm}>
@@ -35,9 +38,8 @@ const ToDosPage = () => {
 				<button>Add list</button>
 			</form>
 
+			<h1 id="ToDosAtag2"> React를 이용한 Todos List</h1>
 			<div>
-				<h1> Todos List</h1>
-
 				<ul>
 					{toDos.map((item, index) => (
 						<li key={index}>{item}</li>
