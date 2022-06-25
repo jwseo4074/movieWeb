@@ -23,11 +23,15 @@ const ToDosPage = () => {
 	// useEffect(console.log(toDo), [toDo]);
 
 	return (
-		<div id="ToDosPageDiv">
+		<div id="ToDosPageDiv" style={{ padding: '40px' }}>
 			<h2 id="ToDosAtag">
 				{' '}
 				Vanila JS로 구현한 Todo List :{' '}
-				<a href="https://jwseo4074.github.io/todoList-Vanila-JS/" target="_blank">
+				<a
+					href="https://jwseo4074.github.io/todoList-Vanila-JS/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					{' '}
 					zwon's Todo List
 				</a>

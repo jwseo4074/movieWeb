@@ -11,9 +11,9 @@ import MoviePage from './Page/MoviePage';
 import UseMemoPracticePage from './Page/UseMemoPracticePage';
 import ReduxPracticePage from './Page/ReduxPracticePage';
 
-import HeaderinDoit from './Pages/Header';
-import Home from './Pages/Home';
-import Example3Page from './Pages/Example3Page';
+// import HeaderinDoit from './Pages/Header';
+// import Home from './Pages/Home';
+// import Example3Page from './Pages/Example3Page';
 
 import Detail from './Component/Detail';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -29,10 +29,7 @@ function App() {
 					<Route path="/webSite-React-JS/contextpage" element={<ContextPage />} />
 
 					<Route path="/webSite-React-JS/doitreactpage/" element={<DoitReactPage />} />
-					<Route
-						path="/webSite-React-JS/doitreactpage/03page"
-						element={<Example3Page />}
-					/>
+
 					{/* <Route path="/webSite-React-JS/doitreactpage/Home" element={<Home />} /> */}
 
 					{/* <Route path="/03page" element={<Example3Page />} />

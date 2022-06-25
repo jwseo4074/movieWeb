@@ -1,23 +1,24 @@
-#headerDiv {
+#headerDivinDoit {
 	display: flex;
 	/* border-bottom: 5px grid black; */
 	width: 100%;
-	background-color: gray;
+	background-color: rgb(85, 84, 84);
 	justify-content: space-between;
 	align-items: center;
 	/* height: 100px; */
 	/* flex-wrap: wrap; */
+	border-radius: 10px;
 }
 
-.headerDivBtn {
+.headerDivBtninDoit {
 	/* flex-basis: auto; */
-	width: 150px;
+	width: 100px;
 	height: 50px;
 	border-radius: 10px;
 	font-size: large;
 	margin: 10px;
 }
-.headerDivBtn:hover {
+.headerDivBtninDoit:hover {
 	background-color: black;
 	cursor: pointer;
 	color: white;

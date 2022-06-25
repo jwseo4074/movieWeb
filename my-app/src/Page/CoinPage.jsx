@@ -3,6 +3,8 @@ import { useState } from 'react';
 // import { useEffect } from 'react';
 import axios from 'axios';
 
+import '../Style/PageStyle/CoinPage.css';
+
 const CoinPage = () => {
 	const [loading, setLoading] = useState(false);
 	const [coinData, setCoinDate] = useState([]);
@@ -24,16 +26,15 @@ const CoinPage = () => {
 	// useEffect(() => {}, [loading]);
 
 	if (loading) {
-		return <h1>loading ... </h1>;
+		return <h1 id="h1_loading">loading ... </h1>;
 	}
 
 	return (
 		<div id="coinPageDiv">
-			<h1>The Coins ! </h1>
+			<h1 id="h1_coinpage">The Coins ! </h1>
 
-			<hr />
 			{coinData.length > 10 ? (
-				<select>
+				<select id="loadCoinSelect">
 					{coinData.map((coin, index) => (
 						<option key={index}>
 							{coin.name} ({coin.symbol}) : {coin.quotes.USD.price} USD
@@ -41,7 +42,10 @@ const CoinPage = () => {
 					))}
 				</select>
 			) : (
-				<button onClick={roadCoinData}> 코인 불러오기 ! </button>
+				<button id="loadCoinBtn" onClick={roadCoinData}>
+					{' '}
+					코인 불러오기 !{' '}
+				</button>
 			)}
 		</div>
 	);

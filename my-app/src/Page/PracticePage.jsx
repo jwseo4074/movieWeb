@@ -79,6 +79,17 @@ const PracticePage = () => {
 					실행되고 실행 x <br />={'>'} 그 괄호 [], 리액트가 쳐다보고 있는 그거를,
 					React.DependencyList 라고 한다.
 				</p>{' '}
+				<p> 그럼 만약 동일한 값으로 state 값이 업데이트 될 때의 useEffect 리렌더링 ? </p>
+				<p>
+					<a
+						href="https://velog.io/@zwon/%EB%8F%99%EC%9D%BC%ED%95%9C-%EA%B0%92%EC%9C%BC%EB%A1%9C-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%ED%96%88%EC%9D%84-%EB%95%8C-%EB%A6%AC%EB%A0%8C%EB%8D%94%EB%A7%81-useEffect-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						{' '}
+						Velog-zwon
+					</a>
+				</p>
 			</div>
 			<div className="practiceContentDiv">
 				<p> Counter 예제 </p>

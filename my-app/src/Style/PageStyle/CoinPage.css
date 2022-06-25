@@ -1,0 +1,49 @@
+/* #moviePageDiv {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+.movies {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(400px, 1fr));
+	grid-gap: 100px;
+	padding: 50px;
+	width: 90%;
+	padding-top: 100px;
+}
+#loadMovieBtn {
+	width: 100px;
+	height: 35px;
+	margin-left: 30px;
+	margin-top: 25px;
+	cursor: pointer;
+} */
+
+#coinPageDiv {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+#loadCoinBtn {
+	width: 100px;
+	height: 35px;
+	margin-left: 30px;
+	margin-top: 25px;
+	cursor: pointer;
+}
+#h1_loading {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+#loadCoinSelect {
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+	/* height: 30px; */
+	width: 300px;
+	margin-left: 10px;
+}
