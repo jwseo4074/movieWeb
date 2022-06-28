@@ -23,9 +23,9 @@ function Test() {
 		<div className="TestBox">
 			<div className="TestUpBox">
 				<h1>useNavigate() 로 페이지를 이동하면서 파라미터 전달하기 </h1>
-				<h3>useNavigate() 훅(Hook)으로 navigate 함수를 가지고 온다.</h3>
+				<h3>1. useNavigate() 훅(Hook)으로 navigate 함수를 가지고 온다.</h3>
 				<h3>
-					navigate() 함수의 첫번째 인자에 이동할 경로, 두번째 인자의 state 속성에
+					2. navigate() 함수의 첫번째 인자에 이동할 경로, 두번째 인자의 state 속성에
 					파라미터를 넣어준다.
 				</h3>
 			</div>
