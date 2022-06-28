@@ -1,0 +1,29 @@
+.TestBox {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.TestUpBox {
+	justify-content: center;
+	/* flex-direction: column; */
+	align-content: center;
+	width: fit-content;
+	justify-content: center;
+	align-content: center;
+}
+.TestDownBox button {
+	width: 50px;
+}
+.TestBox button {
+	width: 100px;
+}
+
+.Test2Box {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}

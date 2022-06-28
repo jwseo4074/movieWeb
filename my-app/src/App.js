@@ -10,6 +10,8 @@ import CoinPage from './Page/CoinPage';
 import MoviePage from './Page/MoviePage';
 import UseMemoPracticePage from './Page/UseMemoPracticePage';
 import ReduxPracticePage from './Page/ReduxPracticePage';
+import Test from './Component/Test';
+import Test2 from './Component/Test2';
 
 // import HeaderinDoit from './Pages/Header';
 // import Home from './Pages/Home';
@@ -29,7 +31,8 @@ function App() {
 					<Route path="/webSite-React-JS/contextpage" element={<ContextPage />} />
 
 					<Route path="/webSite-React-JS/doitreactpage/" element={<DoitReactPage />} />
-
+					<Route path="/webSite-React-JS/routerpractice" element={<Test />} />
+					<Route path="/webSite-React-JS/routerpractice/test2" element={<Test2 />} />
 					{/* <Route path="/webSite-React-JS/doitreactpage/Home" element={<Home />} /> */}
 
 					{/* <Route path="/03page" element={<Example3Page />} />
