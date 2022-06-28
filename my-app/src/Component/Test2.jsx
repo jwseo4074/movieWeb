@@ -27,8 +27,8 @@ export default function Test2() {
 				<p>Nickname: {nickname}</p>
 				<p>Name: {name}</p>
 				<p>Gender: {gender}</p>
-				<p>age: {age}</p>
-				<p>job: {job}</p>
+				<p>Age: {age}</p>
+				<p>Job: {job}</p>
 			</div>
 		</div>
 	);
